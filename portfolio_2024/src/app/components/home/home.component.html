@@ -1,0 +1,10 @@
+<div class="main">
+
+    <app-header-card></app-header-card>
+
+    <div *ngFor="let project of projects">
+        <app-project-card [project]="project"></app-project-card>
+    </div>
+    <app-contact-card></app-contact-card>
+
+</div>

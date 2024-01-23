@@ -1,0 +1,92 @@
+.main {
+    width: 750px;
+    height: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+
+    background-color: rgba(44, 45, 48, 0.721);
+
+    margin-top: 1rem;
+
+    border-radius: 12px;
+    padding: 1rem;
+    -webkit-box-shadow: 8px 8px 24px 0px rgb(0, 0, 0);
+    -moz-box-shadow: 8px 8px 24px 0px rgb(0, 0, 0);
+    box-shadow: 8px 8px 24px 0px rgb(0, 0, 0);
+
+}
+
+.fa-github {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+.text {
+    color: black;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.more {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+    background-color: rgb(30, 117, 248);
+    border-radius: 10px;
+
+    .text {
+        color: white;
+        font-family: "Rubik", sans-serif;
+    }
+
+    i {
+        font-size: 1.2rem;
+    }
+}
+
+.more:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+
+
+.image {
+    img {
+        width: 340px;
+        border-radius: 10px;
+        border: solid 4px rgb(226, 157, 27);
+    }
+}
+
+.title {
+    font-size: 3rem;
+    font-family: "Rubik", sans-serif;
+    color: rgb(226, 157, 27);
+    font-weight: 300;
+}
+
+.description {
+    font-size: 1.2rem;
+    font-family: "Rubik", sans-serif;
+    color: white;
+    font-weight: 300;
+}
+
+.left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

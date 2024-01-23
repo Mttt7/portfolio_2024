@@ -1,0 +1,104 @@
+.main {
+    width: 750px;
+    height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(44, 45, 48, 0.721);
+
+    margin-top: 1rem;
+    border-radius: 12px;
+    padding: 1rem;
+    -webkit-box-shadow: 8px 8px 24px 0px rgb(0, 0, 0);
+    -moz-box-shadow: 8px 8px 24px 0px rgb(0, 0, 0);
+    box-shadow: 8px 8px 24px 0px rgb(0, 0, 0);
+
+
+}
+
+.upper-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.text {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    color: rgb(226, 157, 27);
+    font-weight: 300;
+    font-size: 2rem;
+
+
+
+}
+
+.photo {
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+}
+
+
+.links {
+    display: flex;
+    flex-direction: column;
+
+    .upper-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .email {
+        gap: .3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+        color: white;
+        font-family: "Rubik", sans-serif;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        font-family: "Rubik", sans-serif;
+        gap: .5rem;
+        color: white;
+        text-decoration: none;
+
+        .text-sm:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    a:hover {
+        cursor: pointer;
+    }
+}
+
+.fa-brands,
+.fa-solid {
+    color: rgb(234, 224, 224);
+    font-size: 2rem;
+}
+
+i:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+a {}

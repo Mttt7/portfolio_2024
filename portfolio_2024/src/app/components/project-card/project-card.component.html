@@ -1,0 +1,24 @@
+<div class="main">
+    <div class="left">
+        <div class="title">{{project.title}}</div>
+        <div class="description">{{project.shortDescription}}</div>
+        <div class="links">
+            <app-see-on-github-button [link]="project.link"></app-see-on-github-button>
+            <div class="more" routerLink="/{{project.id}}">
+                <div class="text">More</div>
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="right">
+        <div class="image">
+            <img [src]="project.photos[0].itemImageSrc" alt="">
+        </div>
+
+    </div>
+
+
+
+</div>

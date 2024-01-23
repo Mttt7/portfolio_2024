@@ -1,0 +1,48 @@
+<div class="main">
+    <div class="card">
+        <div class="section1">
+            <div class="back" routerLink="/">
+                <i class="fa-solid fa-arrow-left"></i>
+                <div class="text">BACK</div>
+            </div>
+
+            <div class="title">
+                <h1>{{project.title}}</h1>
+            </div>
+        </div>
+
+        <div class="description">
+            {{project.shortDescription}}
+        </div>
+
+        <div class="gallery">
+            <p-galleria [value]="images" [showIndicators]="true" [showThumbnails]="false" [showItemNavigators]="false"
+                [circular]="true" [changeItemOnIndicatorHover]="true" [responsiveOptions]="responsiveOptions"
+                [autoPlay]="true" [containerStyle]="{ 'max-width': '800px' }" [showIndicatorsOnItem]="false">
+                <ng-template pTemplate="item" let-item>
+                    <img class="image-gallery" [src]="item.itemImageSrc" style=" display: block;" />
+                </ng-template>
+                <ng-template pTemplate="indicator" let-index>
+                    <span style="color: #e9ecef; cursor: pointer;">
+                        <i class="fa-solid fa-circle"></i>
+                    </span>
+                </ng-template>
+
+            </p-galleria>
+        </div>
+
+
+    </div>
+    <div class="card card-sm">
+        <div class="section-photo-text">
+            <div class="description2">
+                {{project.longDescription[0]}}
+            </div>
+        </div>
+    </div>
+
+    <div class="card card-sm">
+        <app-see-on-github-button [link]="project.link"></app-see-on-github-button>
+    </div>
+
+</div>
