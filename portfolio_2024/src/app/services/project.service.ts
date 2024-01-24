@@ -1,10 +1,18 @@
 import { Injectable } from '@angular/core';
 import { Project } from '../models/project';
+import { Technology } from '../models/technology';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProjectService {
+
+  technologies = new Map<string, Technology>([
+    ["Angular", new Technology("Angular", "../../../assets/images/technologies/angular_icon.png")],
+    ["Git", new Technology("Git", "../../../assets/images/technologies/git_icon.png")],
+    ["MySql", new Technology("MySql", "../../../assets/images/technologies/mysql_icon.png")],
+    ["SpringBoot", new Technology("Spring Boot", "../../../assets/images/technologies/spring_boot_icon.svg")],
+  ])
 
   projects: Project[] = [
     new Project(0,
@@ -61,8 +69,9 @@ export class ProjectService {
         alt: "Image 8",
         title: "Image 8"
       }
-
       ],
+      [this.technologies.get("Angular")!, this.technologies.get("MySql")!, this.technologies.get("SpringBoot")!]
+      ,
       "https://github.com/Mttt7/study_smart_fullstack?tab=readme-ov-file"),
   ]
   constructor() { }

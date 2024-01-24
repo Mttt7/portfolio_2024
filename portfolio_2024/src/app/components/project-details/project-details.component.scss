@@ -31,7 +31,13 @@
 }
 
 .card-sm {
-    height: 200px;
+    height: 300px;
+    margin-top: 0;
+    margin-bottom: 4rem;
+}
+
+.card-vsm {
+    height: 120px;
     margin-top: 0;
     margin-bottom: 2rem;
 }
@@ -123,7 +129,28 @@
     align-items: center;
     justify-content: center;
     width: 807px;
+}
 
+.technologies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+
+    .technology {
+
+        img {
+            width: 60px;
+            height: 60px;
+
+        }
+
+        img:hover {
+            transform: scale(1.04);
+            cursor: pointer;
+        }
+    }
 }
 
 

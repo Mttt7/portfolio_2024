@@ -37,12 +37,19 @@
         <div class="section-photo-text">
             <div class="description2">
                 {{project.longDescription[0]}}
+                <div class="technologies">
+                    <div *ngFor="let tech of project.technologies" class="technology">
+                        <img [src]="tech.iconSrc">
+                    </div>
+                </div>
+                {{project.longDescription[1]}}
             </div>
         </div>
-    </div>
-
-    <div class="card card-sm">
         <app-see-on-github-button [link]="project.link"></app-see-on-github-button>
     </div>
+
+    <!-- <div class="card card-vsm">
+        
+    </div> -->
 
 </div>
