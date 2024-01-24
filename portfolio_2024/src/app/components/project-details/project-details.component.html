@@ -30,6 +30,11 @@
 
             </p-galleria>
         </div>
+        <div class="mobile-gallery">
+            <div class="image" *ngFor="let image of images.slice(0,5)">
+                <img [src]="image.itemImageSrc" alt="">
+            </div>
+        </div>
 
 
     </div>

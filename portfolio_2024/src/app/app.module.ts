@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { GalleriaModule } from 'primeng/galleria';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardComponent } from './components/card/card.component';
@@ -28,7 +28,9 @@ import { SeeOnGithubButtonComponent } from './buttons/see-on-github-button/see-o
   imports: [
     BrowserModule,
     AppRoutingModule,
-    GalleriaModule
+    GalleriaModule,
+
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

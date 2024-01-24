@@ -14,6 +14,7 @@ export class ProjectDetailsComponent implements OnInit {
   id: number = -1;
   project: Project = {} as Project;
   images: Photo[] = []
+  displayBasic: boolean | undefined;
 
   responsiveOptions: any[] = [
     {
@@ -25,7 +26,7 @@ export class ProjectDetailsComponent implements OnInit {
       numVisible: 3
     },
     {
-      breakpoint: '560px',
+      breakpoint: '400px',
       numVisible: 1
     }
   ];

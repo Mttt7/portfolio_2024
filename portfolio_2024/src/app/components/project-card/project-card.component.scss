@@ -1,3 +1,7 @@
+.mobile-gallery {
+    display: none;
+}
+
 .main {
     width: 900px;
     height: 290px;
@@ -89,4 +93,46 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+    .main {
+        width: 300px;
+        padding: .2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .left {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .more {
+        height: 35px;
+    }
+
+    .title {
+        font-size: 2.4rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    img {
+        display: none;
+    }
 }
