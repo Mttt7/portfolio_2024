@@ -112,13 +112,14 @@
     }
 
     .technologies {
+        flex-wrap: wrap;
         gap: .15rem;
     }
 
     .tech {
         img {
-            width: 51px !important;
-            height: 51px !important;
+            width: 45px !important;
+            height: 45px !important;
 
         }
     }

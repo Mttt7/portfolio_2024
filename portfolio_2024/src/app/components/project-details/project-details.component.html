@@ -1,5 +1,5 @@
 <div class="main">
-    <div class="card">
+    <div class="card card1">
         <div class="section1">
             <div class="back" routerLink="/">
                 <i class="fa-solid fa-arrow-left"></i>
@@ -41,13 +41,18 @@
     <div class="card card-sm">
         <div class="section-photo-text">
             <div class="description2">
-                {{project.longDescription[0]}}
+                <div style="padding: 1.1rem;">
+                    {{project.longDescription[0]}}
+                </div>
+
                 <div class="technologies">
                     <div *ngFor="let tech of project.technologies" class="technology">
                         <img [src]="tech.iconSrc">
                     </div>
                 </div>
-                {{project.longDescription[1]}}
+                <div style="padding: 1.1rem;">
+                    {{project.longDescription[1]}}
+                </div>
             </div>
         </div>
         <app-see-on-github-button [link]="project.link"></app-see-on-github-button>
